@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear cuenta</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <form>
+        <div class="fieldsetbox">
         <fieldset>
             
-            <h2>Crear cuenta</h2>
-            <label for="usuario">Usuario:</label>
-            <br>
-            <input type="text" id="usuario" name="usuario">
-            
+            <legend>Crear cuenta</legend>
+            <div class="datosbox">
+                <label for="usuario">Usuario:</label>
+                <br>
+                <input type="text" id="usuario" name="datosdeusuario">
+                <br>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="datosdeusuario">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <br>
+                <input type="text" id="apellido" name="datosdeusuario">
+                <br>
+                <label for="contrasena">Contraseña:</label>
+                <br>
+                <input type="password" name="datosdeusuario" id="contrasena">
+            </div>   
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="borrar">Borrar</button>
         </fieldset>
+    </div>
     </form>
 </body>
 </html>
