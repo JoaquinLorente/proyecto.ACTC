@@ -1,131 +1,135 @@
-
-body{
-    background-image: url(./imagenes/826ba110ac1c9e6c20915882b1deafeb.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-/*encabezado*/
-header{
-    color: #adb5bd; 
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: transparent;
-    margin: -1%;
-    width: -1px;
-    background-color: rgb(0, 42, 255);
-    
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
-/*sacamos el color azul a las listas con links*/
-.barradenavegacion a{
-    text-decoration: none;
-    color: #adb5bd;
+/* Fondo con imagen fija */
+body {
+  background-image: url(./imagenes/826ba110ac1c9e6c20915882b1deafeb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f1f1f1;
+  min-height: 100vh;
 }
 
-
-/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
-.barradenavegacion a:hover{
-    color: #dee2e6;
+/* Encabezado */
+header {
+  background-color: rgba(0, 42, 255, 0.85);
+  padding: 1rem;
+  text-align: center;
+  color: #e9ecef;
 }
 
-/*Desplegamos las listas horizontalmente*/
+/* Navegación */
+.barradenavegacion {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.barradenavegacion a {
+  text-decoration: none;
+  color: #adb5bd;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.barradenavegacion a:hover {
+  color: #ffffff;
+}
+
+/* Lista sin viñetas */
 .listasdelabarradenavegacion {
-    display: flex;
-    list-style-type: none;
-    
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
-.listasdelabarradenavegacion li {
-    padding: 20px;
-    font-family:  sans-serif;
-    font-size: 20px;
-}
-legend{
-    color: white;
-    margin-left: -80px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+/* Formulario centrado */
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
-.datosbox{
-margin-top: -70px;
-margin-left: -60px;
-
+fieldset {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
 }
 
-
-label{
-    color: whitesmoke;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+legend {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f8f9fa;
 }
 
-input{
-    padding: 6px;
-margin-top: 2px;
-border-radius: 20px;
-width: 300px;
+/* Contenedor de inputs */
+.datosbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-form{
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-    border-radius: 0px;
+label {
+  font-weight: 500;
 }
 
-fieldset{
-    padding: 80px;
-    border-radius: 15px;
+input {
+  padding: 0.6rem;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
 }
 
-.fieldsetbox{
-    display: flex;
-    background-color: black;
-    position: relative;
-    animation: animacion 2s ease-in-out infinite alternate;
-    border-radius: 15px;
-    padding: 15px;
+/* Botones */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+#enviar {
+  background-color: #0f0;
+  color: #000;
+}
+
+#enviar:hover {
+  background-color: #0c0;
+}
+
+#borrar {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 1rem;
+}
+
+#borrar:hover {
+  background-color: #b02a37;
+}
+
+/* Animación suave */
 @keyframes animacion {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform:translateY(20px) ;
-    }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
-button{
-    margin-top: 20px;
-    margin-left: 0px;
-    border: none;
-    cursor: pointer;
-}
-
-#enviar{
-    background-color: rgb(14, 255, 6);
-    color: black;
-    border-radius: 5px;
-    padding: 5px;
-    margin-left: -60px;
-}
-
-#enviar:hover{
-    background-color: green;
-}
-
-#borrar{
-    background-color: red;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-#borrar:hover{
-    background-color: rgb(190, 24, 24);
+.fieldsetbox {
+  animation: animacion 2s ease-in-out infinite alternate;
 }

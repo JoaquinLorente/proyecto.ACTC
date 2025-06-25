@@ -1,59 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear cuenta</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crear Cuenta</title>
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-    <header>
 
-        <!--barra de navegacion-->
-        <nav>
-            <div class="barradenavegacion">
-                <ul class="listasdelabarradenavegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../">Pilotos</a></li>
-                    <li><a href="../consultas/indexconsultas.html">Campeonato</a></li>
-                    <li><a href="https://www.google.com.ar/maps/place/San+José+de+Feliciano,+Q8302+Neuquén/@-38.9458968,-68.105129,19z/data=!4m15!1m8!3m7!1s0x960a33731fa47e89:0x1e15da20cf91655a!2sSan+José+de+Feliciano,+Q8302+Neuquén!3b1!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s!3m5!1s0x960a33731fa47e89:0x1e15da20cf91655a!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Calandario</a></li>
-                </ul>
-            </div>
-        </nav>
-        
-          
-    </header>
-    <form>
-        <div class="fieldsetbox">
-        <fieldset>
-            
-            <legend>Crear cuenta</legend>
-            <div class="datosbox">
-                <br>
-                <label for="nombre">Nombre:</label>
-                <br>
-                <input type="text" id="nombre" name="datosdeusuario">
-                <br>
-                <label for="apellido">Apellido:</label>
-                <br>
-                <input type="text" id="apellido" name="datosdeusuario">
-                <br>
-                <label for="mail">Mail:</label>
-                <br>
-                <input type="email" name="datosdeusuario" id="mail">
-                <br>
-                <label for="contrasena">Contraseña:</label>
-                <br>
-                <input type="password" name="datosdeusuario" id="contrasena">
-                <br>
-                <label for="numero">Numero: </label>
-                <br>
-                <input type="number" name="datosdeusuario" id="numero">
-            </div>   
-            <button type="submit" id="enviar">Enviar</button>
-            <button type="reset" id="borrar">Borrar</button>
-        </fieldset>
+  <header>
+    <nav>
+      <div class="barradenavegacion">
+        <ul class="listasdelabarradenavegacion">
+          <li><a href="https://www.actc.org.ar/tc/index.html" target="_blank">Inicio</a></li>
+          <li><a href="https://www.actc.org.ar/tc/pilotos.html" target="_blank" >Pilotos</a></li>
+          <li><a href="https://www.actc.org.ar/tc/campeonato.html" target="_blank">Campeonato</a></li>
+          <li><a href="https://www.actc.org.ar/tc/calendario.html" target="_blank">Calendario</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <form>
+    <div class="fieldsetbox">
+      <fieldset>
+        <legend>Crear Cuenta</legend>
+        <div class="datosbox">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="mail" required />
+
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" required />
+
+          <label for="numero">Nº Piloto:</label>
+          <input type="tel" id="numero" name="numero" required />
+        </div>
+
+        <div style="margin-top: 1rem;">
+          <button type="submit" id="enviar">Enviar</button>
+          <button type="reset" id="borrar">Borrar</button>
+        </div>
+      </fieldset>
     </div>
-    </form>
+  </form>
+
 </body>
 </html>
