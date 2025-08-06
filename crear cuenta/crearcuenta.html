@@ -6,49 +6,70 @@
   <title>Crear Cuenta</title>
   <link rel="stylesheet" href="./css/style.css"/>
 </head>
-<body>
 
+<body>
   <header>
+  <div class="barradenavegacion">
     <nav>
-      <div class="barradenavegacion">
-        <ul class="listasdelabarradenavegacion">
-          <li><a href="https://www.actc.org.ar/tc/index.html" target="_blank">Inicio</a></li>
-          <li><a href="https://www.actc.org.ar/tc/pilotos.html" target="_blank" >Pilotos</a></li>
-          <li><a href="https://www.actc.org.ar/tc/campeonato.html" target="_blank">Campeonato</a></li>
-          <li><a href="https://www.actc.org.ar/tc/calendario.html" target="_blank">Calendario</a></li>
-        </ul>
-      </div>
+      <a href="../inicio/index.html">Inicio</a>
+      <a href="https://www.actc.org.ar/tc/calendario.html">Calendario</a>
+      <a href="https://www.actc.org.ar/tc/pilotos.html">Equipos</a>
+      <a href="../crear cuenta/crearcuenta.html">Crear Cuenta</a>
     </nav>
+  </div>
   </header>
 
-  <form>
-    <div class="fieldsetbox">
-      <fieldset>
-        <legend>Crear Cuenta</legend>
-        <div class="datosbox">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
 
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" required />
-
-          <label for="mail">Email:</label>
-          <input type="email" id="mail" name="mail" required />
-
-          <label for="contrasena">Contraseña:</label>
-          <input type="password" id="contrasena" name="contrasena" required />
-
-          <label for="numero">Nº Piloto:</label>
-          <input type="tel" id="numero" name="numero" required />
-        </div>
-
-        <div style="margin-top: 1rem;">
-          <button type="submit" id="enviar">Enviar</button>
-          <button type="reset" id="borrar">Borrar</button>
-        </div>
-      </fieldset>
+    <form>
+        <div class="fieldsetbox">
+        <fieldset>
+            
+            <legend>Crear cuenta</legend>
+            <div class="datosbox">
+                <br>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="datosdeusuario">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <br>
+                <input type="text" id="apellido" name="datosdeusuario">
+                <br>
+                <label for="mail">Mail:</label>
+                <br>
+                <input type="email" name="datosdeusuario" id="mail">
+                <br>
+                <label for="contrasena">Contraseña:</label>
+                <br>
+                <input type="password" name="datosdeusuario" id="contrasena">
+                <br>
+                <label for="numero">Numero: </label>
+                <br>
+                <input type="number" name="datosdeusuario" id="numero">
+            </div>   
+            <button type="submit" id="enviar">Enviar</button>
+            <button type="reset" id="borrar">Borrar</button>
+        </fieldset>
     </div>
-  </form>
+    </form>
+
+
+
+      <div class="divfooter">
+    <footer>
+      <div class="linksdelfooter">
+        <h3>TC</h3>
+        <ul>
+          <a href="../inicio/index.html">Inicio</a>
+          <a href="../">Calendario</a>
+          <a href="../">Equipos</a>
+           <a href="../crear cuenta/crearcuenta.html">Crear Cuenta</a>
+        </ul>
+      </div>
+      
+        <p>© 2025 ACTC | Diseño web con fines demostrativos.</p>
+    </footer>
+  </div>
 
 </body>
 </html>
